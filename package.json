@@ -1,0 +1,28 @@
+{
+  "name": "blog_website",
+  "version": "1.0.0",
+  "description": "build a blog websit ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resource/scss:src/public/css"
+  },
+  "author": "Thai Trieu",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.10.0",
+    "mongoose-slug-updater": "^3.3.0"
+  },
+  "devDependencies": {
+    "express-handlebars": "^8.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "sass": "^1.84.0"
+  }
+}

@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: url("/img/img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wapper {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wapper .form_course {
+  width: 450px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.445);
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.375);
+  backdrop-filter: blur(10px);
+}
+.wapper .form_course h3 {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+}
+.wapper .form_course .inputbox {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+.wapper .form_course .inputbox input {
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.408);
+  margin: 10px;
+  color: whitesmoke;
+  padding: 20px;
+}
+.wapper .form_course .inputbox textarea {
+  border-radius: 20px;
+  height: 90px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.436);
+  margin: 10px;
+  color: whitesmoke;
+  padding: 20px;
+}
+.wapper .form_course .inputbox label {
+  font-size: 17px;
+  font-weight: 600;
+  transform: translateX(5%);
+}
+.wapper .form_course .inputbox span {
+  margin: 0px 20px;
+  color: whitesmoke;
+}
+.wapper .form_course button {
+  display: block;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: 600;
+  color: whitesmoke;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.647);
+}
+.wapper .form_course button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.logo {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.table-name {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  margin: 20px;
+}
+
+.btnTrash {
+  width: 110px;
+  height: 40px;
+  margin: 10px;
+  background: rgba(28, 28, 247, 0.821);
+  border-radius: 10px;
+  border: solid 1px white;
+  color: white;
+}
+.btnTrash a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: solid 13px;
+  font-weight: 600;
+}
+.btnTrash span {
+  color: whitesmoke;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.btnTrash:hover {
+  background: rgba(11, 11, 171, 0.821);
+}
+
+.action-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+.action-header label {
+  color: whitesmoke;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.action-header #chkSelectAll {
+  width: 16px;
+  height: 16px;
+}
+.action-header #combxSelect {
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  color: whitesmoke;
+  border: 2px solid rgba(255, 255, 255, 0.408);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.375);
+  background: transparent;
+}
+.action-header #combxSelect option {
+  background: black;
+}
+
+tbody tr td #chkSelect {
+  width: 16px;
+  height: 16px;
+}
+
+.notice {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */

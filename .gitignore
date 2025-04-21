@@ -1,0 +1,4 @@
+*.cpp
+.env
+resource/
+node_modules/
