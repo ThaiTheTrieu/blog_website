@@ -6,7 +6,7 @@ mongoose.plugin(slug);
 
 const Schema = mongoose.Schema;
 
-const Course = new Schema({
+const CourseSchema = new Schema({
     // _id: { type: Number, },
     name: { type: String },
     videoId: { type: String, },
@@ -29,7 +29,7 @@ function autoFilterDeleted(next) {
 // });
 
 //custom query helpers
-Course.query.sortabel = function (req) {
+CourseSchema.query.sortabel = function (req) {
     if (req.query.hasOwnProperty('_sort')) {
         const isValidtype = ['asc', 'desc'].includes(req.query.type);
 
@@ -38,7 +38,7 @@ Course.query.sortabel = function (req) {
     return this;
 }
 
-Course.plugin(softDelete);
+CourseSchema.plugin(softDelete);
 
-module.exports = mongoose.model('Course', Course);
+module.exports = mongoose.model('Course', CourseSchema);
 

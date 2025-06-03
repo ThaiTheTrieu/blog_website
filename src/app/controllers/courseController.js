@@ -51,7 +51,7 @@ class CourseController {
     }
 
     restore(req, res, next) {
-        console.log("🔍 Route nhận request:", req.originalUrl);
+        console.log("Route nhận request:", req.originalUrl);
         const _id = req.params._id;
         // Course.restore({_id: _id}).then(()=>{
         //     res.redirect('back');
@@ -63,7 +63,7 @@ class CourseController {
 
     deleteMany(req, res, next){
         const ids = req.body.ids;
-        console.log("🔍 Route nhận request:", req.originalUrl);
+        console.log("Route nhận request:", req.originalUrl);
         if (!ids || ids.length===0)  
             return res.json({success: false, message: "không có khóa học được chọn"})
         Course.sDeleteMany(ids).then(()=>{
